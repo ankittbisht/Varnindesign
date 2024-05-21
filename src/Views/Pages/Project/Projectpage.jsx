@@ -15,7 +15,7 @@ function Projectpage() {
         return (
           <div>
             <button
-              className="bg-white flex justify-center items-center border-none rounded-full w-[50px] h-[50px] absolute top-[350px] right-[35px] z-10"
+              className="bg-white flex justify-center items-center border-none rounded-full w-[50px] h-[50px] absolute top-[350px] right-[35px] z-10 hover:scale-125 transition-all ease-in-out duration-300"
               onClick={onClick}
             >
               <svg
@@ -47,7 +47,7 @@ function Projectpage() {
         return (
           <div>
             <button
-              className="bg-white flex justify-center items-center border-none rounded-full w-[50px] h-[50px] absolute top-[350px] right-[90px] z-10"
+              className="bg-white flex justify-center items-center border-none rounded-full w-[50px] h-[50px] absolute top-[350px] right-[90px] z-10 hover:scale-125 transition-all ease-in-out duration-300"
               onClick={onClick}
             >
               <svg
@@ -87,6 +87,9 @@ function Projectpage() {
         centerPadding: "80px",
         slidesToShow: 3,
         speed: 500,
+        autoplay:true,
+        autoplaySpeed: 2000,
+        cssEase: "linear",    
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         responsive: [
@@ -123,7 +126,7 @@ function Projectpage() {
     <section className="project-section">
       <div className="container mx-auto   relative h-dvh top-0">
         <div className="top-1/4  text-center md:text-start md:left-[150px] mb-4 absolute z-10">
-          <h2 className="text-6xl md:text-[150px] font-body mb-4">Projects</h2>
+          <h2 data-aos="fade-up" data-aos-duration="1000" className="text-6xl md:text-[150px] font-body mb-4">Projects</h2>
           <p className="text-white md:text-gray-700 text-base  w-full md:w-2/4 font-roboto">
             Kevin is an influential architect experienced in radical
             technological, environmental, and humanistic changes currently being
@@ -131,28 +134,31 @@ function Projectpage() {
           </p>
         </div>
         <div className="w-full md:w-3/4 mx-auto absolute z-0 text-left right-0">
-          <img src={img1} alt="Project Image" className=" h-[80vh] md:h-screen w-full" />
+          <img src={b} data-aos="flip-left" data-aos-duration="1000" alt="Project Image" className=" h-[80vh] md:h-screen w-full" />
         </div>
       </div>
       <div className="container mx-auto py-4 md:py-24 px-5 md:px-36 h-auto">
         <div className="text-center mb-12">
-          <h2 className="text-5xl font-body">Our Latest Work</h2>
+          <h2 className="text-5xl font-body"  data-aos="fade-up" data-aos-duration="800">Our Latest Work</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 ">
           {images.map((image, index) => (
-            <div key={index}>
+            <div className='group ' key={index} data-aos="fade-up" data-aos-delay={((index + 1) * 500).toString() }>
               <img
                 loading="lazy"
                 src={image}
                 alt={`Work ${index}`}
-                className="h-80 w-full"
+                className="h-48 md:h-80 w-full group-hover:scale-75 group-hover:shadow-2xl transition-all ease-in-out duration-500"
               />
+              <div className="text-2xl absolute bottom-0 left-0 w-full  group-hover:scale-75 text-center bg-white text-black font-roboto   p-2 opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:shadow-2xl">
+    DESIGN
+  </div>
             </div>
           ))}
         </div>
       </div>
-      <div className="container py-14 bg-yellow-100">
-        <div className="flex text-4xl md:text-7xl justify-center font-body pb-14">
+      <div className="container py-14 bg-[#0A23C7]">
+        <div data-aos="fade-up" data-aos-duration="1000" className="text-white flex text-4xl md:text-7xl justify-center font-body pb-14">
           <h1>Our Work</h1>
         </div>
 
@@ -162,6 +168,7 @@ function Projectpage() {
               <div>
                 <div
                   key={index}
+                  data-aos="fade-down" data-aos-duration="1000"
                   className="w-11/12 bg-white h-56 relative text-center z-10 my-20  flex !important justify-center"
                 >
                   <img

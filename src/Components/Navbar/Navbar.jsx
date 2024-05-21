@@ -1,4 +1,5 @@
 import React from 'react'
+import './styles.css';
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import { useState } from "react";
@@ -6,6 +7,7 @@ import logo from "../../assets/Group 6.png";
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+  const [isHovered, setIsHovered] = useState(false);
     const [toggle, setToggle] = useState(false);
     const clicked = () => {
       setToggle(!toggle);
@@ -17,7 +19,9 @@ function Navbar() {
     <nav className="bg-white p-4 flex justify-between items-center container px-5 md:px-44">
       {/* Logo on the left */}
       <div className="flex items-center">
-        <img src={logo} alt="Logo" className="h-12" />
+      <a href='/vernindesign/'>
+              <img src={logo} alt="Logo" className="h-12" />
+            </a>
       </div>
 
       <div
@@ -30,10 +34,10 @@ function Navbar() {
         {/* Navbar menu in the center */}
 
         <ul className="flex pl-8 md:pl-0 pt-14 md:pt-0 text-2xl md:text-sm flex-col md:flex-row gap-8 md:gap-6 text-black font-roboto">
-        <Link to="/"><li className="">Home</li></Link>
-        <Link to="/projects"><li className="">Projects</li></Link> 
-        <Link to="/About"><li className="">About us</li></Link> 
-        <Link to="/contact"><li className="">Contact</li></Link> 
+        <Link to="/vernindesign/"><li className="hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white">Home</li></Link>
+        <Link to="/vernindesign/projects"><li className="hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white">Projects</li></Link> 
+        <Link to="/vernindesign/About"><li className="hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white">About us</li></Link> 
+        <Link to="/vernindesign/contact"><li className="hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white">Contact</li></Link> 
         
         </ul>
         <IoClose
@@ -45,7 +49,10 @@ function Navbar() {
       </div>
       {/* Call button on the right */}
 
-      <button className="bg-[#0A23C7]  text-white  py-2 px-3  items-center gap-2 text-xs font-body hidden md:flex">
+      <button className={`hover:scale-110 transition-all duration-300 ease-in-out bg-[#0A23C7] text-white py-2 px-3 items-center gap-2 text-xs font-body hidden md:flex ${isHovered ? 'ringing-svg' : ''}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      >
         <svg
           width="12"
           height="12"

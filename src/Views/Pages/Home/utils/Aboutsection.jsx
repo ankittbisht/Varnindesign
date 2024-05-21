@@ -11,44 +11,45 @@ function Aboutsection() {
         <div className="relative">
           {/* First Image */}
           <img
+          data-aos="fade-right" data-aos-duration="1000"
             src={img1}
             alt="First Image"
-            className="md:block hidden z-10 absolute h-[500px]"
+            className="md:block hidden z-10 absolute h-[500px] 2xl:h-[600px]"
           />
 
           {/* Second Image */}
-          <h1 className="md:block hidden text-[90px] font-body font-normal z-20 absolute top-[250px] left-[310px] -rotate-90 w-[450px] text-[#000D4B54] opacity-30;
+          <h1 className="md:block hidden text-[90px] 2xl:text-[7rem] font-body font-normal z-20 absolute 2xl:top-[310px] top-[250px] 2xl:left-[390px] left-[310px] -rotate-90 w-[450px] 2xl:w-[500px] text-[#000D4B54] opacity-30;
 ">
             About Us
           </h1>
           <img
             src={img2}
             alt="Second Image"
-            className="z-0 absolute w-[150px] md:w-[255px] h-[975px] md:h-[500px] top-0 md:top-[100px] left-[-32px] md:left-[345px]"
+            className="z-0 absolute w-[150px] md:w-[255px] 2xl:w-[290px] h-[975px] md:h-[500px] 2xl:h-[594px] top-0 md:top-[100px] left-[-32px] md:left-[345px] 2xl:left-[430px]"
           />
         </div>
 
         {/* Second Column */}
-        <div className="flex flex-col justify-start text-left w-full md:w-[470px] gap-2">
+        <div className="flex flex-col justify-start text-left w-full md:w-[470px] 2xl:w-3/4 gap-2">
           {/* Heading */}
-          <h2 className="text-3xl md:text-4xl font-body  font-normal  mb-2">
+          <h2 data-aos="fade-down" data-aos-duration="1000" className="text-3xl md:text-4xl 2xl:text-5xl font-body  font-normal  mb-2">
             Who we are
           </h2>
           {/* Short Intro */}
-          <p className=" mb-4 font-roboto text-sm md:text-xs tracking-[0.5em] text-[#013A71]">ABOUT VARNIN DESIGN CONSULTANCY</p>
+          <p data-aos="fade-up" data-aos-duration="1000" className=" mb-4 font-roboto text-sm md:text-xs 2xl:text-sm tracking-[0.5em] text-[#013A71]">ABOUT VARNIN DESIGN CONSULTANCY</p>
           {/* Long Description */}
-          <p className="text-sm  md:text-xs font-roboto font-normal">
+          <p className="text-sm  md:text-xs 2xl:text-sm font-roboto font-normal">
             Kevin is an influential architect experienced in radical
             technological , environmental, and humanistic changes currently being
             implemented into 21st century architectural thinking.
           </p>
-          <p className="text-sm md:text-xs font-roboto font-normal">
+          <p className="text-sm md:text-xs 2xl:text-sm font-roboto font-normal">
             A passionate, transformative, and highly motivated design
             professional leveraging executive experience in architecture,
             management, and strategic consulting.
           </p>
 
-          <p className="text-sm md:text-xs font-roboto font-normal">
+          <p className="text-sm md:text-xs 2xl:text-sm font-roboto font-normal">
             Kevin have been instrumental in fostering highly collaborative
             environments, driving innovation, and continuously achieving diverse
             range of creative goals, objectives, and milestones. Kevin devoted
@@ -57,7 +58,7 @@ function Aboutsection() {
             entitlement, architecture, and construction.
           </p>
 
-          <p className="text-sm md:text-xs font-roboto font-normal">
+          <p className="text-sm md:text-xs 2xl:text-sm font-roboto font-normal">
             Being well-versed in collaborating cross-functionally with
             developers, architects, engineers, business consultants, builders,
             fabricators, and project management companies, Kevin have a proven
@@ -68,7 +69,7 @@ function Aboutsection() {
             domestic and international clientele.
           </p>
 
-          <p className=" text-sm md:text-xs font-roboto font-normal">
+          <p className=" text-sm md:text-xs 2xl:text-sm  font-roboto font-normal">
             With profound knowledge of current and emerging industry trends,
             methodologies, technologies, and best practices, Kevin have a
             successful track record of meticulously reviewing contract documents
@@ -76,7 +77,7 @@ function Aboutsection() {
             clarity, and overall completeness.
           </p>
 
-          <p className="text-sm md:text-xs font-roboto font-normal">
+          <p className="text-sm md:text-xs 2xl:text-sm  font-roboto font-normal">
             An articulate communicator with credible history of coordinating and
             directing multi-billion-dollar budgets, fiscal administration, and
             project management efforts from inception to timely, within scope

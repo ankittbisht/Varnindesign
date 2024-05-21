@@ -19,7 +19,7 @@ function Contactpage() {
 
       <div className="grid grid-cols-2 px-5 md:px-36 py-5 md:py-16">
         <div className="col-span-2 md:col-span-1 bg-white max-w-md mx-auto">
-          <h2 className="text-4xl font-body mb-4">
+          <h2 data-aos="fade-up" data-aos-duration="700" className="text-4xl font-body mb-4">
             Have a project to discuss, get in touch.
           </h2>
           <form>
@@ -69,7 +69,7 @@ function Contactpage() {
             </div>
             <button
               type="submit"
-              className="bg-[#0A23C7] hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md"
+              className="bg-[#0A23C7]  text-white font-medium py-2 px-4 rounded-md hover:scale-110 hover:shadow-xl transition-all duration-300"
             >
               Send Message
             </button>
@@ -77,12 +77,12 @@ function Contactpage() {
         </div>
         <div className="col-span-2 md:col-span-1 flex justify-center pt-5 md:pt-0">
           {/* Image div */}
-          <img src={img} alt="Contact" className= "w-full object-cover h-[570px]" />
+          <img data-aos="fade-right" data-aos-duration="700" src={img} alt="Contact" className= "w-full object-cover h-[570px]" />
         </div>
       </div>
       <div className="container px-5 md:px-20">
         <div className="grid grid-cols-2 gap-4">
-          <div className="col-span-2 md:col-span-1 hidden md:block">
+          <div data-aos="flip-right" data-aos-duration="1000" className="col-span-2 md:col-span-1 hidden md:block">
             <img
               src={contact}
               alt="House"
@@ -91,8 +91,8 @@ function Contactpage() {
           </div>
           <div className="col-span-2 md:col-span-1 flex flex-col justify-center items-start py-12 md:px-16">
             <div className="mb-16">
-              <h1 className="text-3xl font-body mb-1">You can find us</h1>
-              <p className="text-gray-600 font-roboto text-base">
+              <h1 data-aos="fade-up" data-aos-delay="200" className="text-3xl font-body mb-1">You can find us</h1>
+              <p data-aos="fade-up" data-aos-delay="300" className="text-gray-600 font-roboto text-base">
                 Townhouse Partners Consulting, LLC
                 <br />
                 East 42nd Street, 54th Floor
@@ -101,15 +101,15 @@ function Contactpage() {
               </p>
             </div>
             <div className="mb-16">
-              <h1 className="text-3xl font-body mb-1"> Get in touch</h1>
-              <p className="text-gray-600 text-base font-roboto">info@townhousepartners.com</p>
-              <p className="text-gray-600 text-base font-roboto">(212) 235 2250</p>
+              <h1 data-aos="fade-up" data-aos-delay="400" className="text-3xl font-body mb-1"> Get in touch</h1>
+              <p data-aos="fade-up" data-aos-delay="500" className="text-gray-600 text-base font-roboto">info@townhousepartners.com</p>
+              <p data-aos="fade-up" data-aos-delay="600" className="text-gray-600 text-base font-roboto">(212) 235 2250</p>
             </div>
 
             <div className="col-span-6 md:col-span-1 text-center flex  flex-col  items-start ">
-            <h1 className="text-3xl font-body mb-4">Follow us</h1>
+            <h1 data-aos="fade-up" data-aos-delay="700" className="text-3xl font-body mb-4">Follow us</h1>
               <div className="flex justify-center">
-                <div className="flex items-start md:items-center flex-row gap-4 md:gap-2 text-sm font-body font-normal">
+                <div data-aos="fade-up" data-aos-delay="800" className="flex items-start md:items-center flex-row gap-4 md:gap-2 text-sm font-body font-normal">
                   <a
                     href="https://facebook.com"
                     className=" flex items-center"
@@ -117,7 +117,7 @@ function Contactpage() {
                     <img
                       src={fb}
                       alt="Logo"
-                      className="h-8 border  rounded-full bg-[#0A23C7]"
+                      className="h-8 border  rounded-full bg-black"
                     />
                   </a>
                   <a
@@ -127,7 +127,7 @@ function Contactpage() {
                     <img
                       src={linkedin}
                       alt="Logo"
-                      className="h-8 border   bg-[#0A23C7] rounded-full "
+                      className="h-8 border bg-black   rounded-full "
                     />
                   </a>
                   <a
@@ -137,7 +137,7 @@ function Contactpage() {
                     <img
                       src={insta}
                       alt="Logo"
-                      className="h-8 border  bg-[#0A23C7] rounded-full "
+                      className="h-8 border bg-black  rounded-full "
                     />
                   </a>
                 </div>

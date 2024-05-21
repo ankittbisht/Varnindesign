@@ -11,11 +11,11 @@ import Aboutpage from './Views/Pages/About/Aboutpage.jsx'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/vernindesign",
     element: <App />,
     children: [
       {
-        path: "/",
+        index:true,
         element: <Homepage/>,
       },
       {

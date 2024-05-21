@@ -14,9 +14,9 @@ function Contactsection() {
         {/* First Column */}
         <div className="col-span-12 md:col-span-8 ">
           {/* Heading and Paragraph */}
-          <div className="pb-4 md:pb-20">
-            <h2 className="text-4xl md:text-7xl font-normal  mb-6 font-body">Contact Us</h2>
-            <p className="text-sm text-gray-600 mb-4 font-roboto">
+          <div  className="pb-4 md:pb-20">
+            <h2 data-aos="fade-up" data-aos-duration="1000" className="text-4xl md:text-7xl font-normal  mb-6 font-body">Contact Us</h2>
+            <p  data-aos="fade-down" data-aos-duration="1000"className="text-sm text-gray-600 mb-4 font-roboto">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -26,7 +26,7 @@ function Contactsection() {
             </p>
           </div>
           {/* Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 w-[50%] md:w-full">
+          <div data-aos="zoom-in-up" data-aos-duration="1000" className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 w-[50%] md:w-full">
             {/* Card 1 */}
             <div className="bg-white rounded-lg  text-start">
               <img src={call} alt="Logo 1" className="text-start h-11" />
@@ -62,7 +62,7 @@ function Contactsection() {
             </div>
           </div>
           {/* Button */}
-          <button className="text-xs flex items-center gap-2 bg-[#0A23C7] text-white font-roboto py-2 px-4 rounded">
+          <button data-aos="zoom-in-up" data-aos-duration="1000" className="text-xs flex items-center gap-2 bg-[#0A23C7] text-white font-roboto py-2 px-4 rounded">
             Send Message
             <svg
               width="18"
@@ -79,10 +79,10 @@ function Contactsection() {
           </button>
         </div>
         {/* Second Column */}
-        <div className="col-span-12 md:col-span-4 relative">
+        <div data-aos="fade-down" data-aos-duration="1000" className="col-span-12 md:col-span-4 relative">
           {/* Images */}
-          <img src= {bgImg} alt="Image 2" className="h-[100px] md:h-full top-[-470px] md:top-[15px] left-[254px] md:left-[280px] w-[140px] absolute z-0" />
-          <img src={bnrImg} alt="Image 1" className= "top-[-455px]  md:top-[35px] left-[180px] md:left-[100px] h-[200px] md:h-full w-2/4 md:w-full mb-4 absolute z-10" />
+          <img src= {bgImg} alt="Image 2" className="h-[400px] md:h-[270px] 2xl:h-[300px]  top-[-470px] md:top-[15px] 2xl:top-[-15px] left-[254px] md:left-[280px] w-[140px] 2xl:w-[190px] absolute z-0" />
+          <img src={bnrImg} alt="Image 1" className= "top-[-455px]  md:top-[35px] 2xl:top-0 left-[180px] md:left-[100px] 2xl:left-[60px] h-[440px] md:h-[427px] w-2/4 md:w-full mb-4 absolute z-10" />
         </div>
       </div>
     </div>

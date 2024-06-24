@@ -8,8 +8,8 @@ function Footer() {
   return (
     <>
       <footer className="">
-        <div className="bg-black text-white px-5 md:px-36  py-8 md:py-14 border-b border-[#ffffff50]">
-          <div className="container mx-auto grid grid-cols-12 md:grid-cols-3 md:gap-32">
+        <div className="bg-black text-white px-5 md:px-20 lg:px-36  py-8 md:py-14 border-b border-[#ffffff50]">
+          <div className="mx-auto grid grid-cols-12 md:grid-cols-3 md:gap-32">
             {/* Column 1 */}
             <div className="col-span-6 md:col-span-1 font-body font-normal text-xs md:text-sm w-3/4 md:w-full">
               <div className="mb-10">
@@ -74,7 +74,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="bg-black text-white px-5 md:px-36  py-4">
+        <div className="bg-black text-white px-5 md:px-20 lg:px-36  py-4">
           <div className="flex justify-between text-sm font-body font-normal">
             <p>copyright@TechQilla.com</p>
             <p>Privacy Policy</p>

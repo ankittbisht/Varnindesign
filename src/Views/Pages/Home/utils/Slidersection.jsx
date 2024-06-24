@@ -10,7 +10,7 @@ function Slidersection() {
     return (
       <div>
         <button
-          className="border-[1px] border-white flex justify-center items-center  rounded-full w-[50px] h-[50px] absolute top-[860px] md:top-[50px] right-[300px] md:right-[75px] z-10 hover:scale-125 transition-all ease-in-out duration-300"
+          className="border-[1px] border-white flex justify-center items-center  rounded-full w-[50px] h-[50px] absolute top-[810px] md:top-[50px] right-[300px] md:right-[75px] z-10 hover:scale-125 transition-all ease-in-out duration-300"
           onClick={onClick}
         >
           <svg
@@ -42,7 +42,7 @@ function Slidersection() {
     return (
       <div>
         <button
-          className="border-[1px] border-white flex justify-center items-center rounded-full w-[50px] h-[50px] absolute top-[860px] md:top-[50px] right-[360px] md:right-[135px] z-10 hover:scale-125 transition-all ease-in-out duration-300"
+          className="border-[1px] border-white flex justify-center items-center rounded-full w-[50px] h-[50px] absolute top-[810px] md:top-[50px] right-[360px] md:right-[135px] z-10 hover:scale-125 transition-all ease-in-out duration-300"
           onClick={onClick}
         >
           <svg
@@ -88,16 +88,18 @@ function Slidersection() {
     <>
       <Slider {...settings}>
         <div>
-          <div className="container mx-auto grid grid-cols-12 md:grid-cols-3 gap-4 bg-[#0A23C7] pb-24 md:pb-0  px-4 md:px-0 md:pl-[160px] pt-4 md:pt-36">
-            <div data-aos="fade-up"
-                data-aos-duration="1000" className="col-span-12 md:col-span-1  py-8 ">
-              <h2
-                className="text-4xl pr-8 mb-4 font-roboto font-semibold text-white">
+          <div className="mx-auto grid grid-cols-12 md:grid-cols-3 gap-2 xl:gap-4 bg-[#0A23C7] pb-24 md:pb-0  px-4 md:pl-7 md:px-0 lg:px-0 lg:pl-[160px] pt-4 md:pt-36 ">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="col-span-12 md:col-span-1  py-8 "
+            >
+              <h2 className="text-3xl lg:text-4xl pr-8 mb-4 font-roboto font-semibold text-white">
                 Beijing Hualian Group Taiyuan
               </h2>
 
               {/* leading-6 */}
-              <div className="font-roboto font-normal leading-6  text-sm 2xl:text-base mb-8 md:mb-20 text-white opacity-70">
+              <div className="font-roboto font-normal leading-6  text-sm xl:text-base mb-8 md:mb-20 text-white opacity-70">
                 <p className="">Beijing Hualian Group Taiyuan+</p>
                 <p className="">Beijing Hualian Group Taiyuan</p>
                 <p className="mb-16 md:mb-4">
@@ -105,20 +107,22 @@ function Slidersection() {
                   plaza on top of an underground parking podium. The design
                   intent is to create a contemporary bold design for BHG that
                   incorporates elongated pixelated glass that wraps the facade
-                  in a sleek geometric skin. The glass is illuminated from
-                  behind to produce a mysterious effect as the atmosphere
-                  transforms from day to night.
+                  in a sleek geometric skin.
                 </p>
                 <p className="">Taiyuan, Shanxi, China 2016</p>
               </div>
-              <h5 className="font-body text-lg 2xl:text-xl text-white">1/2</h5>
+              <h5 className="font-body text-lg xl:text-xl text-white">1/2</h5>
             </div>
-            <div data-aos="flip-up" data-aos-duration="1000" className="col-span-12 md:col-span-2 pt-8 ">
+            <div
+              data-aos="flip-up"
+              data-aos-duration="1000"
+              className="col-span-12 md:col-span-2 pt-8 "
+            >
               <div className="flex flex-col items-center relative ">
                 <img
                   src={img}
                   alt="Image 2"
-                  className="  h-full md:h-[492px] 2xl:h-full"
+                  className="  h-full md:h-[492px] xl:h-full"
                 />
                 {/* <button className=" border-[1px] rounded-full top-[270px] md:top-[-125px] left-0 md:left-[550px] absolute">
                   <img src={arrow} alt="" className="h-full p-2" />
@@ -126,7 +130,7 @@ function Slidersection() {
                 <button className=" border-[1px] rounded-full top-[270px] md:top-[-125px] left-14 md:left-[610px] absolute">
                   <img src={arrow} alt="" className="h-full p-2  rotate-180" />
                 </button> */}
-                <h2 className="text-7xl md:text-[130px] 2xl:text-[150px] -top-10 md:-top-20 left-0 text-white font-normal font-body absolute">
+                <h2 className="text-7xl md:text-8xl lg:text-[130px] xl:text-[150px] -top-10 md:-top-20 left-0 text-white font-normal font-body absolute">
                   Projects
                 </h2>
               </div>
@@ -135,16 +139,18 @@ function Slidersection() {
         </div>
 
         <div>
-        <div className="container mx-auto grid grid-cols-12 md:grid-cols-3 gap-4 bg-[#0A23C7] pb-24 md:pb-0  px-4 md:px-0 md:pl-[160px] pt-4 md:pt-36">
-            <div data-aos="fade-up"
-                data-aos-duration="1000" className="col-span-12 md:col-span-1  py-8 ">
-              <h2
-                className="text-4xl pr-8 mb-4 font-roboto font-semibold text-white">
+          <div className="mx-auto grid grid-cols-12 md:grid-cols-3 gap-2 xl:gap-4 bg-[#0A23C7] pb-24 md:pb-0  px-4 md:pl-7 md:px-0 lg:px-0 lg:pl-[160px] pt-4 md:pt-36 ">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="col-span-12 md:col-span-1  py-8 "
+            >
+              <h2 className="text-3xl lg:text-4xl pr-8 mb-4 font-roboto font-semibold text-white">
                 Beijing Hualian Group Taiyuan
               </h2>
 
               {/* leading-6 */}
-              <div className="font-roboto font-normal leading-6  text-sm 2xl:text-base mb-8 md:mb-20 text-white opacity-70">
+              <div className="font-roboto font-normal leading-6  text-sm xl:text-base mb-8 md:mb-20 text-white opacity-70">
                 <p className="">Beijing Hualian Group Taiyuan+</p>
                 <p className="">Beijing Hualian Group Taiyuan</p>
                 <p className="mb-16 md:mb-4">
@@ -152,20 +158,22 @@ function Slidersection() {
                   plaza on top of an underground parking podium. The design
                   intent is to create a contemporary bold design for BHG that
                   incorporates elongated pixelated glass that wraps the facade
-                  in a sleek geometric skin. The glass is illuminated from
-                  behind to produce a mysterious effect as the atmosphere
-                  transforms from day to night.
+                  in a sleek geometric skin.
                 </p>
                 <p className="">Taiyuan, Shanxi, China 2016</p>
               </div>
-              <h5 className="font-body text-lg 2xl:text-xl text-white">2/2</h5>
+              <h5 className="font-body text-lg xl:text-xl text-white">2/2</h5>
             </div>
-            <div data-aos="flip-up" data-aos-duration="1000" className="col-span-12 md:col-span-2 pt-8 ">
+            <div
+              data-aos="flip-up"
+              data-aos-duration="1000"
+              className="col-span-12 md:col-span-2 pt-8 "
+            >
               <div className="flex flex-col items-center relative ">
                 <img
                   src={img}
                   alt="Image 2"
-                  className="  h-full md:h-[492px] 2xl:h-full"
+                  className="  h-full md:h-[492px] xl:h-full"
                 />
                 {/* <button className=" border-[1px] rounded-full top-[270px] md:top-[-125px] left-0 md:left-[550px] absolute">
                   <img src={arrow} alt="" className="h-full p-2" />
@@ -173,7 +181,7 @@ function Slidersection() {
                 <button className=" border-[1px] rounded-full top-[270px] md:top-[-125px] left-14 md:left-[610px] absolute">
                   <img src={arrow} alt="" className="h-full p-2  rotate-180" />
                 </button> */}
-                <h2 className="text-7xl md:text-[130px] 2xl:text-[150px] -top-10 md:-top-20 left-0 text-white font-normal font-body absolute">
+                <h2 className="text-7xl md:text-8xl lg:text-[130px] xl:text-[150px] -top-10 md:-top-20 left-0 text-white font-normal font-body absolute">
                   Projects
                 </h2>
               </div>

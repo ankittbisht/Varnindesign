@@ -10,7 +10,7 @@ function Herosection() {
     return (
       <div>
         <button
-          className="p-[5px] md:p-0 border-[1px] md:border-none  bg-white  md:bg-transparent flex justify-center items-center  rounded-full w-[40px] h-[40px] absolute top-[340px] md:top-[450px] left-[80px] md:left-[270px] z-10"
+          className="p-[5px] md:p-0 border-[1px] md:border-none  bg-white  md:bg-transparent flex justify-center items-center  rounded-full w-[40px] h-[40px] absolute  top-[340px]  md:top-[350px] lg:top-[450px] left-[80px] md:left-[18%] lg:left-[270px] z-10"
           onClick={onClick}
         >
           <svg
@@ -35,7 +35,7 @@ function Herosection() {
     return (
       <div>
         <button
-          className="p-[5px] md:p-0 border-[1px] md:border-none bg-white  md:bg-transparent   flex justify-center items-center rounded-full w-[40px] h-[40px] absolute top-[340px] md:top-[450px] left-[33px] md:left-[220px] z-10"
+          className="p-[5px] md:p-0 border-[1px] md:border-none bg-white  md:bg-transparent   flex justify-center items-center rounded-full w-[40px] h-[40px] absolute top-[340px] md:top-[350px] lg:top-[450px] left-[33px] md:left-[12%] lg:left-[220px] z-10"
           onClick={onClick}
         >
           <svg
@@ -61,7 +61,7 @@ function Herosection() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     cssEase: "linear",
     nextArrow: <SampleNextArrow />,
@@ -72,17 +72,17 @@ function Herosection() {
     <>
       <Slider {...settings}>
         <div>
-          <div className="container mx-auto pt:0 md:pt-4 pb-0 md:pb-16">
+          <div className="mx-auto pt:0 md:pt-4 pb-0 md:pb-16 overflow-hidden md:min-h-screen">
             <div className="grid grid-cols-12 md:grid-cols-2 gap-4">
               {/* Left Column */}
               <div
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 className="flex flex-col justify-center relative text-left
- z-10 left-8 top-0 md:left-[220px] md:top-[-40px] min-w-[70dvw] md:min-w-[410px] text-white md:text-black"
+ z-10 left-8 top-0 md:left-[24%] lg:left-[220px] md:top-[-40px] min-w-[70dvw] md:min-w-[490px]  lg:min-w-[410px] text-white md:text-black"
               >
                 {/* Heading */}
-                <h2 className="text-2xl md:text-[40px] 2xl:text-5xl leading-10 font-normal font-body mb-2">
+                <h2 className="text-2xl md:text-[30px]  lg:text-[40px] 2xl:text-5xl leading-10 font-normal font-body mb-2">
                   Witness superior quality, luxurious and value-engineered
                   buildings
                 </h2>
@@ -111,31 +111,35 @@ function Herosection() {
                 </button>
               </div>
               {/* Right Column */}
-              <div  data-aos="flip-up" data-aos-duration="1000" className="relative">
+              <div
+                data-aos="flip-up"
+                data-aos-duration="1000"
+                className="relative"
+              >
                 {/* Image */}
                 <img
                   src={img1}
                   alt="Image"
-                  className=" relative left-[-40px]  md:left-[-55px] min-w-[100dvw] md:min-w-[678px] h-[400px] md:h-[600px] 2xl:min-w-[806px] "
+                  className="object-cover relative left-[-40px]  md:left-[-30px] lg:left-[-55px] min-w-[100dvw] md:min-w-[560px] md:h-[470px] lg:min-w-[678px] h-[400px] lg:h-[600px] xl:h-[650px] xl:min-w-[806px] "
                 />
               </div>
             </div>
           </div>
         </div>
 
-{/* //second slider */}
-<div>
-          <div className="container mx-auto pt:0 md:pt-4 pb-0 md:pb-16">
+        {/* //second slider */}
+        <div>
+        <div className="mx-auto pt:0 md:pt-4 pb-0 md:pb-16 overflow-hidden md:min-h-screen">
             <div className="grid grid-cols-12 md:grid-cols-2 gap-4">
               {/* Left Column */}
               <div
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 className="flex flex-col justify-center relative text-left
- z-10 left-8 top-0 md:left-[220px] md:top-[-40px] min-w-[70dvw] md:min-w-[410px] text-white md:text-black"
+ z-10 left-8 top-0 md:left-[24%] lg:left-[220px] md:top-[-40px] min-w-[70dvw] md:min-w-[490px]  lg:min-w-[410px] text-white md:text-black"
               >
                 {/* Heading */}
-                <h2 className="text-2xl md:text-[40px] 2xl:text-5xl leading-10 font-normal font-body mb-2">
+                <h2 className="text-2xl md:text-[30px]  lg:text-[40px] 2xl:text-5xl leading-10 font-normal font-body mb-2">
                   Witness superior quality, luxurious and value-engineered
                   buildings
                 </h2>
@@ -164,31 +168,35 @@ function Herosection() {
                 </button>
               </div>
               {/* Right Column */}
-              <div  data-aos="flip-up" data-aos-duration="1000" className="relative">
+              <div
+                data-aos="flip-up"
+                data-aos-duration="1000"
+                className="relative"
+              >
                 {/* Image */}
                 <img
                   src={b}
                   alt="Image"
-                  className=" relative left-[-40px]  md:left-[-55px] min-w-[100dvw] md:min-w-[678px] h-[400px] md:h-[600px] 2xl:min-w-[806px] "
+                  className="object-cover relative left-[-40px]  md:left-[-30px] lg:left-[-55px] min-w-[100dvw] md:min-w-[560px] md:h-[470px] lg:min-w-[678px] h-[400px] lg:h-[600px] xl:h-[650px] xl:min-w-[806px] "
                 />
               </div>
             </div>
           </div>
         </div>
 
-{/* Third Slider */}
-<div>
-          <div className="container mx-auto pt:0 md:pt-4 pb-0 md:pb-16">
+        {/* Third Slider */}
+        <div>
+        <div className="mx-auto pt:0 md:pt-4 pb-0 md:pb-16 overflow-hidden md:min-h-screen">
             <div className="grid grid-cols-12 md:grid-cols-2 gap-4">
               {/* Left Column */}
               <div
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 className="flex flex-col justify-center relative text-left
- z-10 left-8 top-0 md:left-[220px] md:top-[-40px] min-w-[70dvw] md:min-w-[410px] text-white md:text-black"
+ z-10 left-8 top-0 md:left-[24%] lg:left-[220px] md:top-[-40px] min-w-[70dvw] md:min-w-[490px]  lg:min-w-[410px] text-white md:text-black"
               >
                 {/* Heading */}
-                <h2 className="text-2xl md:text-[40px] 2xl:text-5xl leading-10 font-normal font-body mb-2">
+                <h2 className="text-2xl md:text-[30px]  lg:text-[40px] 2xl:text-5xl leading-10 font-normal font-body mb-2">
                   Witness superior quality, luxurious and value-engineered
                   buildings
                 </h2>
@@ -217,12 +225,16 @@ function Herosection() {
                 </button>
               </div>
               {/* Right Column */}
-              <div  data-aos="flip-up" data-aos-duration="1000" className="relative">
+              <div
+                data-aos="flip-up"
+                data-aos-duration="1000"
+                className="relative"
+              >
                 {/* Image */}
                 <img
                   src={f}
                   alt="Image"
-                  className=" relative left-[-40px]  md:left-[-55px] min-w-[100dvw] md:min-w-[678px] h-[400px] md:h-[600px] 2xl:min-w-[806px] "
+                  className="object-cover relative left-[-40px]  md:left-[-30px] lg:left-[-55px] min-w-[100dvw] md:min-w-[560px] md:h-[470px] lg:min-w-[678px] h-[400px] lg:h-[600px] xl:h-[650px] xl:min-w-[806px] "
                 />
               </div>
             </div>

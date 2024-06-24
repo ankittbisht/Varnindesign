@@ -1,23 +1,26 @@
 .ringing-svg path {
-    transform-origin: center;
-    animation: ring 0.3s infinite alternate;
+  transform-origin: center;
+  animation: ring 0.3s infinite alternate;
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes ring {
-    0% {
-        transform: rotate(0deg);
-      }
-      25% {
-        transform: rotate(20deg);
-      }
-      50% {
-        transform: rotate(0deg);
-      }
-      75% {
-        transform: rotate(-20deg);
-      }
-      100% {
-        transform: rotate(0deg);
-      }
+
+  25% {
+    transform: rotate(20deg);
   }
-  
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

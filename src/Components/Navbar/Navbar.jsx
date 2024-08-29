@@ -23,7 +23,7 @@ function Navbar() {
         <nav className="bg-white p-4 flex justify-between items-center  px-5 md:px-20 lg:px-44">
           {/* Logo on the left */}
           <div className="flex items-center">
-            <a href="/vernindesign/">
+            <a href="/">
               <img src={logo} alt="Logo" className="h-12" />
             </a>
           </div>
@@ -37,24 +37,24 @@ function Navbar() {
           >
             {/* Navbar menu in the center */}
 
-            <ul className="flex pl-8 md:pl-0 pt-14 md:pt-0 text-2xl md:text-sm flex-col md:flex-row gap-8 md:gap-6 text-black font-roboto">
-              <Link to="/vernindesign/" onClick={handleLinkClick}>
-                <li className="hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white">
+            <ul className="flex pl-8 md:pl-0 pt-14 md:pt-0 text-2xl md:text-sm flex-col md:flex-row gap-8 md:gap-6 text-black font-roboto lg:gap-10 md:items-center">
+              <Link to="/" onClick={handleLinkClick}>
+                <li className="hover:scale-105 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white hover:px-3 hover:py-2  ">
                   Home
                 </li>
               </Link>
-              <Link to="/vernindesign/projects" onClick={handleLinkClick}>
-                <li className="hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white">
+              <Link to="/projects" onClick={handleLinkClick}>
+                <li className="hover:scale-105 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white hover:px-3 hover:py-2">
                   Projects
                 </li>
               </Link>
-              <Link to="/vernindesign/About" onClick={handleLinkClick}>
-                <li className="hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white">
+              <Link to="/About" onClick={handleLinkClick}>
+                <li className="hover:scale-105 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white hover:px-3 hover:py-2">
                   About us
                 </li>
               </Link>
-              <Link to="/vernindesign/contact" onClick={handleLinkClick}>
-                <li className="hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white">
+              <Link to="/contact" onClick={handleLinkClick}>
+                <li className="hover:scale-105 transition-all duration-300 ease-in-out hover:bg-[#0A23C7] hover:text-white hover:px-3 hover:py-2">
                   Contact
                 </li>
               </Link>
@@ -69,7 +69,7 @@ function Navbar() {
           {/* Call button on the right */}
 
           <button
-            className={`hover:scale-110 transition-all duration-300 ease-in-out bg-[#0A23C7] text-white py-2 px-3 items-center gap-2 text-xs font-body hidden md:flex ${
+            className={`hover:scale-105 transition-all duration-300 ease-in-out bg-[#0A23C7] text-white py-2 px-3 items-center gap-2 text-xs font-body hidden md:flex ${
               isHovered ? "ringing-svg" : ""
             }`}
             onMouseEnter={() => setIsHovered(true)}

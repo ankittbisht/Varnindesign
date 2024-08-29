@@ -82,12 +82,12 @@ function Herosection() {
  z-10 left-8 top-0 md:left-[24%] lg:left-[220px] md:top-[-40px] min-w-[70dvw] md:min-w-[490px]  lg:min-w-[410px] text-white md:text-black"
               >
                 {/* Heading */}
-                <h2 className="text-2xl md:text-[30px]  lg:text-[40px] 2xl:text-5xl leading-10 font-normal font-body mb-2">
+                <h2 className="text-2xl md:text-[30px]  lg:text-[40px] 2xl:text-5xl leading-10 md:font-normal font-body mb-2 text-black font-medium">
                   Witness superior quality, luxurious and value-engineered
                   buildings
                 </h2>
                 {/* Description */}
-                <p className="text-sm md:text-xs 2xl:text-base text-white md:text-[#898989] mb-4 font-roboto text-left">
+                <p className="text-sm md:text-xs 2xl:text-base text-white md:text-[#898989] mb-4 font-roboto text-left font-medium ">
                   We provide design consulting renderings with a touch of poetry
                 </p>
                 {/* Button */}
@@ -129,7 +129,7 @@ function Herosection() {
 
         {/* //second slider */}
         <div>
-        <div className="mx-auto pt:0 md:pt-4 pb-0 md:pb-16 overflow-hidden md:min-h-screen">
+          <div className="mx-auto pt:0 md:pt-4 pb-0 md:pb-16 overflow-hidden md:min-h-screen">
             <div className="grid grid-cols-12 md:grid-cols-2 gap-4">
               {/* Left Column */}
               <div
@@ -139,7 +139,7 @@ function Herosection() {
  z-10 left-8 top-0 md:left-[24%] lg:left-[220px] md:top-[-40px] min-w-[70dvw] md:min-w-[490px]  lg:min-w-[410px] text-white md:text-black"
               >
                 {/* Heading */}
-                <h2 className="text-2xl md:text-[30px]  lg:text-[40px] 2xl:text-5xl leading-10 font-normal font-body mb-2">
+                <h2 className="text-2xl md:text-[30px]  lg:text-[40px] 2xl:text-5xl leading-10 md:font-normal font-body mb-2 text-black font-medium">
                   Witness superior quality, luxurious and value-engineered
                   buildings
                 </h2>
@@ -186,7 +186,7 @@ function Herosection() {
 
         {/* Third Slider */}
         <div>
-        <div className="mx-auto pt:0 md:pt-4 pb-0 md:pb-16 overflow-hidden md:min-h-screen">
+          <div className="mx-auto pt:0 md:pt-4 pb-0 md:pb-16 overflow-hidden md:min-h-screen">
             <div className="grid grid-cols-12 md:grid-cols-2 gap-4">
               {/* Left Column */}
               <div
@@ -196,7 +196,7 @@ function Herosection() {
  z-10 left-8 top-0 md:left-[24%] lg:left-[220px] md:top-[-40px] min-w-[70dvw] md:min-w-[490px]  lg:min-w-[410px] text-white md:text-black"
               >
                 {/* Heading */}
-                <h2 className="text-2xl md:text-[30px]  lg:text-[40px] 2xl:text-5xl leading-10 font-normal font-body mb-2">
+                <h2 className="text-2xl md:text-[30px]  lg:text-[40px] 2xl:text-5xl leading-10 md:font-normal font-body mb-2 text-black font-medium">
                   Witness superior quality, luxurious and value-engineered
                   buildings
                 </h2>

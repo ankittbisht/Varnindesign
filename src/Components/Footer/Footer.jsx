@@ -76,7 +76,7 @@ function Footer() {
         </div>
         <div className="bg-black text-white px-5 md:px-20 lg:px-36  py-4">
           <div className="flex justify-between text-sm font-body font-normal">
-            <p>copyright@TechQilla.com</p>
+            <p>&copy; Techxerro</p>
             <p>Privacy Policy</p>
           </div>
         </div>
